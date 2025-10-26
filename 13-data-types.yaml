@@ -5,9 +5,9 @@
    COURSE: aws devops course #it is string
    IS_LIVE: true #Boolean
    TOOLS:
-    -linux
-    -shell
-    -absible
+   - linux
+   - shell
+   - absible
    CONCEPTS: 
     CI: JENKINS
     SCRIPTING: shell,python,bash,golang
@@ -16,5 +16,6 @@
     ansible.builtin.debug:
      msg: course is: "{{ COURSE }}, duration is: {{ DURATION }}, is alive: {{ IS_ALIVE }}, concepts are: {{ CONCEPTS }}, scripting tools: {{ SCRIPTING }}"
   
+
 
 
