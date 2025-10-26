@@ -1,0 +1,18 @@
+- name: create data types
+  host: frontend
+  vars:
+   DURATION: 120 # this is number
+   COURSE: aws devops course #it is string
+   IS_LIVE: true #Boolean
+   TOOLS:
+    -linux
+    -shell
+    -absible
+   CONCEPTS: 
+    CI: JENKINS
+    SCRIPTING: shell,python,bash,golang
+  tasks:
+  - name: print course information
+    ansible.builtin.debug:
+    msg: course is: "{{ COURSE }}, duration is: {{ DURATION }}, is alive: {{ IS_ALIVE}}, concepts are: {{ CONCEPTS }}, scripting tools: {{ SCRIPTING }}"
+
