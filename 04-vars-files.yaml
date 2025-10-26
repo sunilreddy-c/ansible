@@ -9,3 +9,4 @@
     msg: "print the course info {{ COURSE }}, Duratio {{ DURATION }}, trainer{{ TRAINER }}, fee{{ FEE }}"
 
 
+
