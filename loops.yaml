@@ -1,0 +1,12 @@
+- name: loops 
+  hosts: frontend
+  tasks:
+  - name: print name
+    ansible.builtin.plugin:
+      msg: Hello "{{ item }}"
+    loop:
+    - suresh 
+    - sunil 
+    - ansible
+    - ansi  
+
