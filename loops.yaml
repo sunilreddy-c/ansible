@@ -2,7 +2,7 @@
   hosts: frontend
   tasks:
   - name: print name
-    ansible.builtin.plugin:
+    ansible.builtin.debug:
       msg: Hello "{{ item }}"
     loop:
     - suresh 
